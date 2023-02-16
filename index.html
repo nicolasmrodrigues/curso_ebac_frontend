@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício JavaScript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+    <title>Exercício de Bootstrap</title>
 </head>
 <body>
-    <div class="container">
-        <form id="form-numbers">
-            <input type="number" id="numberA-input" required>
-            <input type="number" id="numberB-input" required>
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="validation-message"></p>
+    <h1>Exercício de Bootstrap</h1>
+    <div class="row">
+        <div class="col-8 col-lg-3 col-md-6">
+            <h2>Cadastre-se</h2>
+            <form>
+                <label class="form-label" for="nome">Seu nome:</label>
+                <input id="nome" class="form-control" type="text">
+                <label class="form-label" for="email">Seu email:</label>
+                <input id="email" class="form-control" type="email">
+                <label class="form-label" for="telefone">Seu telefone:</label>
+                <input id="telefone" class="form-control" type="tel">
+                <button class="btn btn-success">Enviar</button>
+            </form>
+        </div>
     </div>
-    <script src="main.js"></script>
 </body>
 </html>
